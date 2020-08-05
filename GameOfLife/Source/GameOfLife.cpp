@@ -80,7 +80,7 @@ void DrawGrid() {
 }
 void TestGeneration()
 {
-	
+	int Alive;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++)
 			gridcopy[i][j] = grid[i][j];
@@ -89,7 +89,7 @@ void TestGeneration()
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++)
 		{
-			int Alive = GetNeighbours(i, j);
+			 Alive = GetNeighbours(i, j);
 			if (grid[i][j] == 1) {
 				if (Alive<2 || Alive>3) grid[i][j] = 0;
 			}
